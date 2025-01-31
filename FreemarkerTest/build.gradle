@@ -1,0 +1,30 @@
+plugins {
+    id "java"
+    id "idea"
+}
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+group = "com.stevekung.freemarkertest"
+version = "1.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.freemarker/freemarker
+    implementation 'org.freemarker:freemarker:2.3.34'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

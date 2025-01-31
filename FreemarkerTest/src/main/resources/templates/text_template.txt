@@ -1,0 +1,28 @@
+# Text Template for Blackhole properties
+
+# Boolean
+is_old_blackhole=${old_blackhole?c}
+
+# String
+blackhole_desc=${blackhole_desc}
+
+# Datetime
+evaporated_at=${evaporated_at?datetime("yyyy-MM-dd")?string("dd/MM/yyyy HH:mm:ss a")}
+
+# Model List
+<#if spaghettified_objects?has_content>
+    <#list spaghettified_objects as spaghettified>
+spaghettified_object_type=${spaghettified.type()}
+spaghettified_object_name=${spaghettified.name()}
+    </#list>
+</#if>
+
+# Map
+<#if virtual_particles?has_content>
+  <#list virtual_particles as key, value>
+virtual_particles=${key},${value}
+  </#list>
+</#if>
+
+# String List
+accepted_list=${accepted_list}
