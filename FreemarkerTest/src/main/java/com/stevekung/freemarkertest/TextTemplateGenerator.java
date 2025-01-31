@@ -1,4 +1,4 @@
-package com.stevekung.freemarker;
+package com.stevekung.freemarkertest;
 
 import java.io.File;
 import java.io.FileWriter;
