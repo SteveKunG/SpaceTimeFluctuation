@@ -1,0 +1,33 @@
+plugins {
+    id "java"
+    id "idea"
+}
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+group = "com.stevekung.docxtemplategenerator"
+version = "1.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.18.2"
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation "org.apache.poi:poi-ooxml:5.3.0"
+
+    testImplementation platform("org.junit:junit-bom:5.10.0")
+    testImplementation "org.junit.jupiter:junit-jupiter"
+}
+
+test {
+    useJUnitPlatform()
+}

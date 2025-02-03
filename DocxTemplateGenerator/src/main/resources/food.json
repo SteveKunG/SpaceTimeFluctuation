@@ -1,0 +1,31 @@
+{
+  "title": "Flucke Food",
+  "food_name": "Furry Rice",
+  "ingredients": [
+    {
+      "number": "1",
+      "type": "Plant",
+      "name": "Rice"
+    },
+    {
+      "number": "2",
+      "type": "Meat",
+      "name": "Furry Meat"
+    },
+    {
+      "number": "3",
+      "type": "Seasoning",
+      "name": "Black Pepper"
+    },
+    {
+      "number": "4",
+      "type": "Seasoning",
+      "name": "Salt"
+    },
+    {
+      "number": "5",
+      "type": "Seasoning",
+      "name": "Sauce"
+    }
+  ]
+}
