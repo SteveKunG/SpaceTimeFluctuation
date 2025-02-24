@@ -1,0 +1,51 @@
+{
+  "universe": {
+    "id": 616,
+    "planets": [
+      {
+        "name": "Super Earth",
+        "mass": 10,
+        "atmosphere": [
+          {
+            "type": "Oxygen",
+            "percentage": 20
+          },
+          {
+            "type": "Nitrogen",
+            "percentage": 70
+          },
+          {
+            "type": "Carbon Dioxide",
+            "percentage": 10
+          }
+        ]
+      },
+      {
+        "name": "Mars",
+        "mass": 5,
+        "atmosphere": {
+          "type": "Carbon Dioxide",
+          "percentage": 10
+        }
+      },
+      {
+        "name": "Furry",
+        "mass": 100,
+        "atmosphere": {
+          "type": "Wool",
+          "percentage": 100
+        }
+      }
+    ],
+    "galaxies": [
+      {
+        "name": "Milky Way",
+        "type": "Spiral"
+      },
+      {
+        "name": "Andromeda",
+        "type": "Spiral"
+      }
+    ]
+  }
+}
